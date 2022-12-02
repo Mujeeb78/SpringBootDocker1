@@ -29,3 +29,10 @@ steps:
     WebAppName: 'JavaAppAnuj'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
     RuntimeStack: 'JAVA|8-jre8'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure Pass - Sponsorship(1)(38d49f39-cc0c-45f7-80a2-3d938ebb7b07)'
+    appType: 'webApp'
+    WebAppName: 'SpringBootDocker1'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
